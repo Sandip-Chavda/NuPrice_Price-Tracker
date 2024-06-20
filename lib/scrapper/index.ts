@@ -3,7 +3,7 @@ import * as cheerio from "cheerio";
 import {
   extractCurrency,
   extractDescription,
-  extractNumberOfReviews,
+  // extractNumberOfReviews,
   extractPrice,
   extractRetings,
 } from "../utils";
