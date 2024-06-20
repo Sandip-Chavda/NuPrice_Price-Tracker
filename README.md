@@ -1,3 +1,18 @@
+- // Assuming $("span#acrCustomerReviewText").text().trim() returns "28,230 ratings28,230 ratings"
+  const text = $("span#acrCustomerReviewText").text().trim();
+
+// Extract the numerical part (assuming the number is separated by a space)
+const numericPart = text.split(' ')[0]; // This assumes the number is the first part before a space
+
+// Format the number as needed (e.g., adding commas for thousands)
+const formattedNumber = numberWithCommas(numericPart);
+
+console.log("numberOfReviewers:", formattedNumber);
+
+// Function to add commas for thousands
+function numberWithCommas(x) {
+return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
