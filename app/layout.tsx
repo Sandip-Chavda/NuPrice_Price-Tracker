@@ -13,7 +13,7 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "NuPrice | Get notified to online shoping at best price.",
   description:
-    "Track products price effortlessly and save money on your next online shopping.",
+    "Track products price effortlessly and save money on your next online shopping via E-mail.",
 };
 
 export default function RootLayout({
