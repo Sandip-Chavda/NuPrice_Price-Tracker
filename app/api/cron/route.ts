@@ -10,9 +10,11 @@ import {
 } from "@/lib/utils";
 import { NextResponse } from "next/server";
 
-export const maxDuration = 60; // this is seconds
+export const maxDuration = 300; // this is seconds
 export const dynamic = "force-dynamic";
 export const revalidate = 0;
+
+const BATCH_SIZE = 10; // Define the batch size
 
 export async function GET() {
   try {
