@@ -120,19 +120,19 @@ export async function GET(request: Request) {
     const updatedProducts = await Promise.all(
       products.map(async (currentProduct) => {
         // Scrape product
-        const scrappedProduct = await scrapeAmazonProduct(currentProduct.url);
+        const scrapedProduct = await scrapeAmazonProduct(currentProduct.url);
 
-        if (!scrappedProduct) return;
+        if (!scrapedProduct) return;
 
         const updatedPriceHistory = [
           ...currentProduct.priceHistory,
           {
-            price: scrappedProduct.currentPrice,
+            price: scrapedProduct.currentPrice,
           },
         ];
 
         const product = {
-          ...scrappedProduct,
+          ...scrapedProduct,
           priceHistory: updatedPriceHistory,
           lowestPrice: getLowestPrice(updatedPriceHistory),
           highestPrice: getHighestPrice(updatedPriceHistory),
@@ -149,7 +149,7 @@ export async function GET(request: Request) {
 
         // ======================== 2 CHECK EACH PRODUCT'S STATUS & SEND EMAIL ACCORDINGLY
         const emailNotifType = getEmailNotifType(
-          scrappedProduct,
+          scrapedProduct,
           currentProduct
         );
 
