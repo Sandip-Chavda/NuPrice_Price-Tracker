@@ -13,6 +13,14 @@ const Home = async () => {
       <section className="px-6 md:px-20 py-24">
         <div className="flex max-xl:flex-col gap-16 ">
           <div className="flex flex-col justify-center">
+            <div className="block md:hidden bg-orange-500/30 w-fit px-3 py-2 rounded-full mx-auto mb-8">
+              Only for{" "}
+              <span className="text-lg font-semibold italic animate-pulse duration-1000">
+                amazon.in/.com{" "}
+              </span>{" "}
+              products
+            </div>
+
             <p className="small-text group w-fit">
               Smart Shopping Start Here 😊
               <Image

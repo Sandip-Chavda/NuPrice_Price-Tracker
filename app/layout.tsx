@@ -3,6 +3,7 @@ import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const spaceGrotesk = Space_Grotesk({
@@ -27,6 +28,7 @@ export default function RootLayout({
         <main className="max-w-10xl mx-auto">
           <Navbar />
           {children}
+          <Footer />
           <Toaster />
         </main>
       </body>

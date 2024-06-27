@@ -36,6 +36,14 @@ const Navbar = () => {
           </p>
         </Link>
 
+        <div className="hidden md:flex mt-2 items-center justify-center gap-1 bg-orange-500/30 px-5 py-2 rounded-full font-normal">
+          ⚠️Currently available only for{" "}
+          <span className="text-lg font-semibold italic animate-pulse duration-1000">
+            amazon.in/.com
+          </span>{" "}
+          products⚠️
+        </div>
+
         <div className="flex items-center gap-5">
           {navIcons.map((navIcon) => {
             return (
