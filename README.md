@@ -18,6 +18,10 @@
 
 - ## Video
 
+
+https://github.com/Sandip-Chavda/NuPrice_Price-Tracker/assets/140686165/b68bc859-0178-4685-862a-da97430f4d63
+
+
 ## Tech-Stack & Tools
 
 - **Brightdata for avoid IP blocking or device IP block**
