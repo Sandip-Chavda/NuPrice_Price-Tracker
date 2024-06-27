@@ -1,4 +1,4 @@
-# NuPrice - Price Tracker [🔗💰](https://nuprice-pricetracker.vercel.app/)
+# [NuPrice - Price Tracker 🔗💰](https://nuprice-pricetracker.vercel.app/)
 
 - NuPrice - Price Tracker is a powerful tool designed to help users track prices from the Amazon website. It provides detailed information on prices, stock availability, max & lowest price, average price and product photos. Users can set up notifications to receive alerts via email whenever there is a price change,,stock availability, ensuring they never miss out on a deal. This project leverages modern web technologies, including React.js, Next.js, TypeScript, and Tailwind CSS, CRON jobs and MongoDB to deliver a seamless and efficient user experience.
 
@@ -18,9 +18,7 @@
 
 - ## Video
 
-
 https://github.com/Sandip-Chavda/NuPrice_Price-Tracker/assets/140686165/b68bc859-0178-4685-862a-da97430f4d63
-
 
 ## Tech-Stack & Tools
 
